@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+.macdinh{
+	font-size: 100%;
+}
+.colon{
+	font-size: 140%;
+}
+.conho{
+	font-size: 60%;
+}
+div{
+	width: 300px;
+	padding: 20px;
+	border: 1px solid black;
+}
+</style>
+<body>
+	<div>
+		<p>Cỡ chữ</p>
+		<button onclick="macdinh()">Mặc định</button>
+		<button onclick="colon()">Lớn</button>
+		<button onclick="conho()">Nhỏ</button>
+	</div>
+
+	<p id="ct">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit eveniet repudiandae iusto voluptatum non saepe a quae ex dolorum ipsa eius, facere dolor architecto perferendis porro. Accusamus veritatis dolorem eos? adipisicing elit. Impedit eveniet repudiandae iusto voluptatum non saepe a quae ex dolorum ipsa eius, facere dolor architecto perferendis porro. Accusamus veritatis dolorem eos</p>
+	<script type="text/javascript">
+		function macdinh() {
+			
+		document.getElementsByTagName("p")[1].setAttribute("class","macdinh");
+		};
+		function colon() {
+			
+		document.getElementsByTagName("p")[1].setAttribute("class","colon");
+		};
+		function conho() {
+			
+		document.getElementsByTagName("p")[1].setAttribute("class","conho");
+		}
+
+	</script>
+</body>
+</html>

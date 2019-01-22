@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+*{
+	margin :0;
+	text-align: center;
+}
+div{
+	margin: 0 auto;
+	width: 67%;
+	background-color: #ADBDDF;
+	border: 1px solid gray;
+	padding-left: 0;
+
+}
+.check{
+	display: inline-block;
+	padding: 18px;
+
+	
+}
+p{
+	margin: 0;
+	display: inline-block;
+	padding: 18px;
+	
+
+}
+div:hover{
+	background-color: #4BDC67;
+}
+a{
+	text-align: left;
+	text-decoration: underline;
+	color: #9999ff;
+}
+section{
+	text-align: left;
+	margin-left: 15%;
+	margin-top: 50px;
+}
+</style>
+<body>
+	<div>
+	<p>	
+	<input type="checkbox" name="" class="check">
+	</p>
+	<p style="border-left: 1px solid gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum vitae quidem natus debitis libero, esse sit, velit dolorum possimus, quam labore .</p>
+	</div>
+	<div>
+	<p>	
+	<input type="checkbox" name="" class="check">
+	</p>
+	<p style="border-left: 1px solid gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum vitae quidem natus debitis libero, esse sit, velit dolorum possimus, quam labore .</p>
+	</div>
+	<div>
+	<p>	
+	<input type="checkbox" name="" class="check">
+	</p>
+	<p style="border-left: 1px solid gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum vitae quidem natus debitis libero, esse sit, velit dolorum possimus, quam labore .</p>
+	</div>
+	<div>
+	<p>	
+	<input type="checkbox" name="" class="check">
+	</p>
+	<p style="border-left: 1px solid gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum vitae quidem natus debitis libero, esse sit, velit dolorum possimus, quam labore .</p>
+	</div>
+	<div>
+	<p>	
+	<input type="checkbox" name="" class="check">
+	</p>
+	<p style="border-left: 1px solid gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum vitae quidem natus debitis libero, esse sit, velit dolorum possimus, quam labore .</p>
+	</div>
+	<div>
+	<p>	
+	<input type="checkbox" name="" class="check">
+	</p>
+	<p style="border-left: 1px solid gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum vitae quidem natus debitis libero, esse sit, velit dolorum possimus, quam labore .</p>
+	</div>
+	<div>
+	<p>	
+	<input type="checkbox" name="" class="check">
+	</p>
+	<p style="border-left: 1px solid gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum vitae quidem natus debitis libero, esse sit, velit dolorum possimus, quam labore .</p>
+	</div>
+	<div>
+	<p>	
+	<input type="checkbox" name="" class="check">
+	</p>
+	<p style="border-left: 1px solid gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum vitae quidem natus debitis libero, esse sit, velit dolorum possimus, quam labore .</p>
+	</div>
+	<section >
+	<a onclick="check()" >Check all</a>
+	<a onclick="uncheck()" >Uncheck all</a>
+	</section>
+
+	<script type="text/javascript">
+		function check(){
+			var check=document.getElementsByClassName("check");
+			for (var i = 0; i < check.length; i++) {
+				check[i].checked=true;
+
+			}
+
+		}
+		function uncheck(){
+			var check=document.getElementsByClassName("check");
+			for (var i = 0; i < check.length; i++) {
+				check[i].checked=false;
+
+			}
+		
+		}
+	</script>
+
+</body>
+</html>
