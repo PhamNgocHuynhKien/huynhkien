@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	section{
+		text-align: center;
+	}
+	form{
+		padding: 20px;
+		border-radius: 10px;
+		border: 1px solid black;
+		background-color: #f2f2f2;
+		width: 50%;
+		margin:0 auto;
+	}
+	table{
+		margin:0 auto;
+		text-align: left;
+		padding-bottom: 30px;
+	}
+	input{
+		
+		width: 200px;
+	}
+	button{
+		background-color:  #ff471a;
+		color: white;
+		font-weight: bold;
+		border: none;
+		padding: 5px 8px;
+		margin:0 50px;
+	}
+	td{
+		width: 200px;
+	}
+</style>
+<body>
+	<section>
+		<form action="">
+			
+			<table>
+				<tr id="1">
+					<td>Họ và tên</td>
+					<td><input type="text" name="" placeholder="Nhập họ và tên..." id="ten"></td>
+					
+				</tr>
+				<tr>
+					<td>Giới tính</td>
+					<td><input type="radio" name="gioitinh" style="width: 16px;">Nam<input type="radio" name="gioitinh" style="width: 16px;">Nữ</td>
+					
+				</tr>
+				<tr id="2">
+					<td>Email</td>
+					<td><input type="email" name="" placeholder="Nhập email..." id="email"></td>
+					
+				</tr>
+				<tr id="3">
+					<td>Số điện thoại</td>
+					<td><input type="text" name="" placeholder="Nhập số điện thoại..." id="phone"></td>
+					
+				</tr>
+				<tr id="4">
+					<td>Mật khẩu</td>
+					<td><input type="password" name="" value="" id="pass"></td>
+					
+				</tr>
+				<tr id="5">
+					<td>Xác nhận mật khẩu</td>
+					<td><input type="password" name="" value="" id="repass"></td>
+					
+				</tr>
+			</table>
+			<div>
+			<button type="submit" id="dk">Đăng ký</button>
+			<button type="reset">Xóa trắng</button>
+			<div>
+
+		</form>
+		<script type="text/javascript">
+			var kt=5;
+			document.getElementById('dk').addEventListener('click',function(){
+				if (document.getElementById('ten').value.length<8) {
+					var td = document.createElement('td');
+					td.innerHTML=`Yêu cầu nhập đầy đủ họ tên`;
+					document.getElementById('1').appendChild(td);
+					kt--;
+					
+				}
+					if (document.getElementById('email').value.length==' ') {
+					var td = document.createElement('td');
+					td.innerHTML=`Yêu cầu nhập email`;
+					document.getElementById('2').appendChild(td);
+					kt--;
+
+					
+					
+				}
+
+					if (document.getElementById('phone').value.length==' ') {
+					var td = document.createElement('td');
+					td.innerHTML=`Yêu cầu nhập số điện thoại`;
+					document.getElementById('3').appendChild(td);
+					kt--;
+					
+				}
+					if (document.getElementById('pass').value.length==' ') {
+					var td = document.createElement('td');
+					td.innerHTML=`Yêu cầu nhập password`;
+					document.getElementById('4').appendChild(td);
+					kt--;
+					
+				}
+					if (document.getElementById('repass').value.length==' '||document.getElementById('repass').value!=document.getElementById('pass').value) {
+					var td = document.createElement('td');
+					td.innerHTML=`Yêu cầu nhâp đúng password`;
+					document.getElementById('5').appendChild(td);
+					kt--;
+					
+				};
+				if (kt!=5) {
+					alert('Nhập lại')
+				}
+			});
+		
+		
+		
+		</script>
+	</section>
+	
+</body>
+</html>
