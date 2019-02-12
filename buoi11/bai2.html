@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<style type="text/css">
+*{
+	margin:0;
+}
+	#bar{
+		background-color: red;
+		padding:50px 20px 20px;
+	}
+	#input{
+		margin-left: 50px;
+		padding: 0;
+		border: none;
+		height: 40px;
+		width: 70%;
+	}
+	#add{
+
+		border: none;
+		height: 40px;
+		width: 20%;
+	}
+	h1{
+		text-align: center;
+		color: white;
+	}
+	.el{
+		line-height: 42px;
+		background-color: #f2f2f2;
+		height: 42px;
+		padding-left: 20px;
+	}
+	#xoa{
+	border: none;
+	background-color: #f2f2f2;
+	float: right;
+	padding-right: 50px;
+	height: 42px;
+	line-height: 42px;
+	}
+	.el:hover{
+		background-color: #e6e6e6;
+	}
+	.el:hover .xoa{
+		background-color: #e6e6e6;
+	}
+	.icon{
+		display: none;
+	}
+	.el:active{
+		background-color: #808080;
+		text-decoration: line-through;
+		color: white;
+
+	}
+	.el:active .icon{
+		display: block;
+	}
+</style>
+<body>
+	<div id=bar>
+		<h1>My to do list</h1>
+		<input id="input"   type="text" placeholder="    Title..."><input id="add" type="submit" name="" value="Add">
+	</div>
+	<div id="nd"></div>
+	<script type="text/javascript">
+		var add= document.getElementById("add");
+
+		add.addEventListener("click",function(){
+			var input = document.getElementById("input").value;
+			if (input=="") {
+				alert('Nhap lai');
+			}else{
+			
+			var div=document.createElement("div");
+
+			div.innerHTML=`<a><div class="el"><i class="icon" class="fas fa-check"></i>   `+ input +`<button id="xoa" onclick="del(this)">X</button></div></a>` ;
+			document.getElementById("nd").appendChild(div);
+			document.getElementById("input").value='';}
+		});
+		function del(a)
+		{
+			a.parentNode.remove()
+		};
+
+	</script>
+	
+</body>
+</html>

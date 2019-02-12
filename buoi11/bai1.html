@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<style type="text/css">
+
+*{
+	margin: 0;
+	font-size: 14px;
+
+}
+body{
+	width: 80%;
+	margin: 0 auto;
+	font-family: arial;
+}
+header{
+	text-align: center;
+	margin: 10px 0;
+	background-color: #F9FBFF;
+}
+img{
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+#banner{
+	margin:100px auto;
+}
+#banner h2{
+	font-size: 32px;
+	font-weight: normal;
+}
+#banner h1{
+	font-weight: bold;
+	font-size: 60px;
+	margin: 10px auto;
+}
+#sl{
+	padding:40px;
+	background-color: #e6ffff;
+
+}
+#anhsl{
+	background-color: #e6ffff;
+	float: left;
+	width: 40%;
+	padding-top: 20px;
+	padding-right: 0px;
+}
+#textsl{
+	padding-top: 20px;
+	background-color: #e6ffff;
+	float: left;
+	width: 50%;
+	text-align: left;
+}
+#textsl h2{
+		font-weight: normal;
+		font-size: 28px;
+}
+#textsl h1{
+		font-size: 42px;
+}
+ul{
+	margin: 20px 0px;
+	padding-left: 0px;
+	list-style-type: none;
+}
+ul li{
+	margin-top: 20px;
+}
+ul i{
+	color:  #33ccff;
+	padding-right: 10px;
+}
+.nut{
+	margin: 10px 10px;
+	border-radius: 20px;
+	padding: 10px 20px;
+	border: 1px solid black;
+	float: left;
+}
+.nut:hover{
+	background-color: #00bfff;
+}
+nav{
+
+	text-align: center;
+}
+nav h1{
+	font-size: 48px;
+}
+nav h2{
+	font-size: 32px;
+	font-weight: normal;
+}
+.ct1{
+	width: 80%;
+	margin: 20px auto;
+}
+.nd1{
+	padding: 20px 5px;
+	margin:5px;
+	border: 1px solid #f2f2f2;
+	float: left;
+	width: 22%;
+	text-align: center;
+}
+.nd1 img{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.nd1 h2{
+	font-weight: bold;
+	font-size: 24px;
+	margin: 10px 0;
+}
+.nd1 .nut{
+
+	margin: 20px 30px ;
+
+}
+section{
+	padding:50px 30px;
+	background-color: #e6ffff;
+	width: 100%;
+	margin: 0 auto;
+}
+.text2{
+	float: left;
+	width: 60%;
+}
+.text2 h1{
+	font-size: 42px;
+}
+.text2 h2{
+	font-size: 22px;
+	font-weight: normal;
+}
+form{
+	box-shadow: 5px 5px 5px black;
+	margin-left: 5%;
+	background-color: white;
+	width: 35%;
+	float: left;
+	border-radius: 10px;
+	padding:0 ;
+	
+}
+input{
+	margin:0 auto;
+	width: 80%;
+	padding: 10px 0px;
+	border: none;
+	border-bottom: 1px solid #f2f2f2;
+	margin-left: 10%;}
+.button{
+	background-color: #00bfff;
+	margin-top: 10px;
+	color: white;
+	font-weight: bold;
+}
+.ct3{
+
+	margin: 80px auto;
+	width: 80%;
+
+}
+.nd3{
+
+	margin-top: 100px;
+	margin-bottom: 50px;
+	height: 150px;
+	
+	
+	
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.nd31{
+
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border: 1px solid #f2f2f2;
+	
+	width: 95%;
+	box-shadow: 2px 2px 2px #f2f2f2;
+}
+.cus{
+	position: absolute;
+	top: -35px;
+	left: 42%;
+}
+.nd31 h2,p{
+	padding-top: 10px;
+}
+.nut2{
+	border: 1px solid white;
+	width: 300px;
+	background-color: blue;
+	color: white;
+	margin:20px auto;
+	border-radius: 15px;
+}
+footer{
+	margin-top: 50px;
+	width:100%;
+	height: 42px;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+@media (max-width: 768px) and (min-width: 475px) 
+{
+	#anhsl{
+		width: 100%;
+	}
+	#textsl{
+		width: 100%;
+	}
+	.nd1{
+		width: 40%;
+	}
+	.text2{
+		width: 100%;
+	}
+	form{
+		width: 100%;
+		margin-top: 50px;
+		margin-left: 0%;
+	}
+	.nd3{
+		width: 100%;
+		margin-top: 100px;
+		font-size: 12px;
+	}
+	.nut{
+	margin: 5px;
+	
+	padding: 8px 12px;
+	border: 1px solid black;
+	float: left;
+	font-size: 10px;
+}
+
+}
+@media (max-width: 474px)
+{
+	.nd1{
+		width: 80%;
+	}
+	#anhsl{
+		width: 100%;
+	}
+	#textsl{
+		width: 100%;
+	}
+	
+	.text2{
+		width: 100%;
+	}
+	form{
+		width: 100%;
+		margin-top: 50px;
+		margin-left: 0%;
+	}
+	.nd3{
+		width: 100%;
+		margin-top: 200px;
+		font-size: 12px;
+	}
+	.nut{
+	margin: 5px;
+	
+	padding: 8px 12px;
+	border: 1px solid black;
+	float: left;
+	font-size: 10px;
+}
+
+}
+</style>
+<body>
+	<header>
+		<img src="images/black-logo.png" >
+		<div id="banner">
+			<h2>Our top productivity softwares</h2>
+			<h1>For business</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae dolores atque fugiat ipsum quo aperiam non, suscipit, sint.</p>
+			<h2 class="nut2">Get started for free</h2>
+		</div>
+		
+		<img src="images/pro-bg.png" width="100%">
+		<div id="sl">
+			<div id="anhsl">
+			<img src="images/free.png" width="70%">
+			</div>
+			<div id="textsl">
+			<h2>Download the</h2>
+			<h1>Ebook Guide</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sunt necessitatibus in maiores numquam earum, quia animi magni dolores accusamus unde obcaecati a corporis! Expedita, odit commodi nobis libero fuga.</p>
+			<ul>
+				<li><i class="fas fa-dot-circle"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quasi atque magnam.</li>
+				<li><i class="fas fa-dot-circle"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quasi atque magnam.</li>
+				<li><i class="fas fa-dot-circle"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quasi atque magnam.</li>
+				<li><i class="fas fa-dot-circle"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quasi atque magnam.</li>
+			</ul>
+			<p class="nut">
+				Free trial 30 days
+			</p>
+			<p class="nut">
+				Demo Request
+			</p>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+		
+	</header>
+	<nav>
+		<h2>Online bussiness software</h2>
+		<h1>Try it Free</h1>
+		<div class="ct1">
+			<div class="nd1">
+				<img src="images/g3.png">
+				<h2>Analysis Tool</h2>
+				<p>sum dolor sit amet, consectetur adipisicing elit. Praesentium sunt necessitatibus in maiores</p>
+				<p class="nut">
+				Demo Request
+			</p>
+			</div>
+				<div class="nd1">
+				<img src="images/g11.png">
+				<h2>Analysis Tool</h2>
+				<p>sum dolor sit amet, consectetur adipisicing elit. Praesentium sunt necessitatibus in maiores</p>
+				<p class="nut">
+				Demo Request
+			</p>
+			</div>
+				<div class="nd1">
+				<img src="images/g6.png">
+				<h2>Analysis Tool</h2>
+				<p>sum dolor sit amet, consectetur adipisicing elit. Praesentium sunt necessitatibus in maiores</p>
+				<p class="nut">
+				Demo Request
+			</p>
+			</div>
+				<div class="nd1">
+				<img src="images/g2.png">
+				<h2>Analysis Tool</h2>
+				<p>sum dolor sit amet, consectetur adipisicing elit. Praesentium sunt necessitatibus in maiores</p>
+				<p class="nut">
+				Demo Request
+			</p>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+	</nav>
+	<section>
+		<div style="width: 80%; margin: 0 auto">
+			<div class="text2">
+			<h1>Buy Now</h1>
+			<h2>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit
+			</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium animi fugit molestias est debitis, officia qui ea repudiandae consequatur. 
+			</p>
+			<hr size="1px" style="margin:20px 0;">
+			<img src="images/do.png" width="10%" style="float: left; width: 10%;">
+			<div style="float: left; padding-left: 20px">
+				<p style="font-weight: bold; font-size: 24px">Demo version 2.0</p>
+				<p>Free trail 60 days</p>
+	</div>
+	<div style="clear: both;"></div>
+		
+	</div>
+	
+			<form action="">
+				<h1 style="text-align: center; background-color: black; color: white; padding:10px;border-top-right-radius: 10px;
+				border-top-left-radius: 10px">Fill the Form</h1>
+				<div style="background-color: white">
+				<input type="text" name="" placeholder=" Name">
+				<input type="text" name="" placeholder=" Email">
+				<input type="text" name="" placeholder=" Phone">
+				
+				</div>
+				<input type="submit" name=""  value="Download Now" class="button">
+				<p style="margin:5px;font-size: 8px; text-align: center;">Lorem ipsum dolor sit amet, consectetur, consectetur</p>
+			</form>
+			
+	
+		<div style="clear: both;"></div>
+		
+	</section>
+	<h2 style="font-size: 52px; text-align: center;margin-top: 50px">Customer says</h2>
+	<h1 style="font-weight: normal;font-size: 28px;text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h1>
+	<div class="ct3">
+		<div class="nd3">
+			<div class="nd31">
+				<img class="cus" src="images/cus1.png" alt="">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum reprehenderit odio, quod non quidem dolores beatae esse qui corporis quae ratione omnis, aliquid, nihil eos sunt harum. Autem, nesciunt, ut!</p>
+				<h2>Masthow</h2>
+				<p>New york</p>
+			</div>
+		</div>
+			<div class="nd3">
+			<div class="nd31">
+				<img class="cus" src="images/cus2.png" alt="">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum reprehenderit odio, quod non quidem dolores beatae esse qui corporis quae ratione omnis, aliquid, nihil eos sunt harum. Autem, nesciunt, ut!</p>
+				<h2>Masthow</h2>
+				<p>New york</p>
+			</div>
+		</div>
+			<div class="nd3">
+			<div class="nd31">
+				<img class="cus" src="images/cus3.png" alt="">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum reprehenderit odio, quod non quidem dolores beatae esse qui corporis quae ratione omnis, aliquid, nihil eos sunt harum. Autem, nesciunt, ut!</p>
+				<h2>Masthow</h2>
+				<p>New york</p>
+			</div>
+		</div>
+			<div class="nd3">
+			<div class="nd31">
+				<img class="cus" src="images/cus4.png" alt="">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum reprehenderit odio, quod non quidem dolores beatae esse qui corporis quae ratione omnis, aliquid, nihil eos sunt harum. Autem, nesciunt, ut!</p>
+				<h2>Masthow</h2>
+				<p>New york</p>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	
+	</div>
+	<div style="clear: both;"></div>
+	<footer>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
+	</footer>
+</body>
+</html>
