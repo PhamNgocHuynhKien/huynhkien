@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact</title>
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<style>
+
+</style>
+
+<body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top wow bounce">
+	  <a class="navbar-brand logo" href="#">ZENT GROUP</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href=" index.html">HOME <span class="sr-only">(current)</span></a>
+	      </li>
+	    <li class="nav-item active">
+	        <a class="nav-link" href="about.html">ABOUT <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item active">
+	        <a class="nav-link" href="gallery.html">GALLERY <span class="sr-only">(current)</span></a>
+	      </li>
+	   	 <li class="nav-item active">
+	        <a class="nav-link" href="#">PAGES <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item active">
+	        <a class="nav-link" href="blog.html">BLOG<span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item active">
+	        <a class="nav-link" href="contact.html">CONTACT<span class="sr-only">(current)</span></a>
+	      </li>
+	  </ul>
+	  </div>
+	 
+	</nav>
+	<div id="home">
+		
+		<div class="wow bounceInDown">
+      <p>Home <i class="fas fa-arrow-right"></i>Contact</p>
+		<h1>
+			Contact
+		</h1>
+		
+	</div>
+	</div>
+		
+<div id="map" style="width:80%;height:500px;">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7033.703850859601!2d105.84244413575848!3d20.953525154349787!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135adaf86893dd5%3A0x6214f20197690c55!2zWcOqbiBOZ8awdSwgVGFtIEhp4buHcCwgVGhhbmggVHLDrCwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1551108540649" width="600" height="450" frameborder="0" style="border:0 ;width:100%" allowfullscreen></iframe>
+</div>
+<div class="container">
+<form action="">
+  <div class="row">
+    <div class="col-lg-4">
+      <ul class="list-group">
+		  <li class="list-group-item"><i class="fas fa-home "></i> California, United States<p style="padding-left: 50px;color: #a6a6a6;width: 100%;">Santa monica bullevrd</p></li>
+		  <li class="list-group-item"><i class="fas fa-phone"></i> 00 0145824565<p style="padding-left: 50px;color: #a6a6a6;width: 100%;">Mon to Fri 9am to 6pm</p></li>
+		  <li class="list-group-item"><i class="far fa-envelope"></i> support@colorlib.com<p style="padding-left: 50px;color: #a6a6a6;width: 100%;">Send us your query anytime</p></li>
+		</ul>
+    </div>
+    <div class="col-lg-4">
+   
+  <div class="form-group"> 
+    
+    <input type="text" class="form-control" id="ten" placeholder="Enter your name">
+  </div>
+  <div class="form-group">
+    
+    <input type="text" class="form-control" id="diachi" placeholder="Enter your address">
+  </div>
+   <div class="form-group">
+    
+    <input type="text" class="form-control" id="nd" placeholder="Enter your subject">
+  </div>
+
+    </div>
+    <div class="col-lg-4" style="text-align: right;">
+      <textarea name="" id="loinhan" cols="40" rows="6"></textarea><br>
+      <button id="gui" type="submit" class="btn btn-outline-primary" >Send message</button>
+    </div>
+  </div>
+</form>
+ <script type="text/javascript">
+	   	var kt=4;
+	   	document.getElementById('gui').addEventListener('click',function(){
+	   		if (document.getElementById('ten').value.length==0) {
+	   			kt--;
+
+	   		}
+	   		if (document.getElementById('diachi').value.length==0) {
+	   			
+	   			kt--;
+	   		}
+	   		if (document.getElementById('nd').value.length==0) {
+	   			kt--;
+	   		}
+	   		if (document.getElementById('loinhan').value.length==0) {
+	   			kt--;
+	   		}
+	   		if (kt!=4) {
+	   			alert('Nhap lai')
+	   		}
+	   	});
+	   </script>
+</div>
+<div id="footer">
+<div class="container-fluit ct5">
+  <div class="row">
+    <div class="col-lg-3">
+	<ul class="list-group">
+	  <li class="list-group-item">About Farfly</li>
+	  <li class="list-group-item listcl">For Business</li>
+	  <li class="list-group-item listcl">Premium</li>
+	   <li class="list-group-item listcl">Reviews</li>
+	  <li class="list-group-item listcl">How it Works</li>
+	  <li class="list-group-item listcl">Farfly Blog</li>
+	</ul>
+    </div>
+    <div class="col-lg-3">
+      <ul class="list-group">
+	  <li class="list-group-item ">Company</li>
+	  <li class="list-group-item listcl">Product Tour</li>
+	  <li class="list-group-item listcl">Founding Members</li>
+	  <li class="list-group-item listcl">Case Studies</li>
+	  <li class="list-group-item listcl">Pricing</li>
+	  <li class="list-group-item listcl">Product Updates</li>
+	</ul>
+    </div>
+    <div class="col-lg-3">
+      <ul class="list-group">
+	  <li class="list-group-item">Support</li>
+	  <li class="list-group-item listcl">Documentation</li>
+	  <li class="list-group-item listcl">Data Secureiry</li>
+	  <li class="list-group-item  listcl">Producted</li>
+	  <li class="list-group-item listcl">Site Performant </li>
+	  <li class="list-group-item listcl">Resources</li>
+	</ul>
+    </div>
+     <div class="col-lg-3">
+     	<ul>
+     <li class="list-group-item">Yellow strawbery</li>
+      <div class="container">
+		  <div class="row">
+		    <div class="col-lg- ftimg">
+		     <img src="image/tran1.jpg" alt="">
+		    </div>
+		    <div class="col-lg-4 ftimg">
+		     <img src="image/tran2.jpg" alt="">
+		    </div>
+		    <div class="col-lg-4 ftimg">
+		    <img src="image/tran3.jpg" alt="">
+		    </div>
+		    <div class="col-lg-4 ftimg">
+		     <img src="image/tran4.jpg" alt="">
+		    </div>
+		    <div class="col-lg-4 ftimg">
+		     <img src="image/tran5.jpg" alt="">
+		    </div>
+		    <div class="col-lg-4 ftimg">
+		    <img src="image/tran6.jpg" alt="">
+		    </div>
+		     <div class="col-lg-4 ftimg">
+		     <img src="image/tran7.jpg" alt="">
+		    </div>
+		    
+		  </div>
+		</div>
+	  
+	</ul>
+    </div>
+  </div>
+
+
+
+</div>
+
+	
+</div>
+  <div class="ct6">
+    
+     <i class="fab fa-facebook wow zoomInDown"></i>
+     <i class="fab fa-github-square wow zoomInDown"></i>
+     <i class="fab fa-youtube-square wow zoomInDown"></i>
+     <i class="fab fa-twitter-square wow zoomInDown"></i>
+    </div>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript">new WOW().init();</script>
+</div>
+</div>
+</body>
+
+
+</html>

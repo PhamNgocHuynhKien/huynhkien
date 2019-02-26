@@ -1,0 +1,181 @@
+body{
+	font-family: 'Lora', serif;
+	margin:0;
+}
+#home{
+	text-align: center;
+	background: url('../image/img/banner/home-banner.jpg');
+	height: 400px;
+}
+#home p{
+	width: 100%;
+}
+#home i{
+	margin:0 10px;
+}
+#home div{
+	margin-top: 10%;
+	float: left;
+	width: 100%;
+	
+	color: white;
+}
+#ct1{
+	position: relative;
+	color: white;
+	padding: 100px;
+	width: 70%;
+	margin: 150px 10% 50px ;
+	height: 500px;
+	background-color: #271F64;
+
+}
+#ct1 h1,p{
+	width: 50%;
+
+}
+
+img{
+	margin-bottom: 50px;
+}
+
+#footer .list-group-item{
+	background: none;
+	color: white;
+	text-align: center;
+	border: none;
+}
+.list-group-item{
+	background: none;
+	text-align: right;
+	border: none;
+}
+.list-group-item i{
+	margin-left: 20px;
+}
+.icon i{
+	color: #cccccc;
+		font-size: 24px;
+		
+}
+.bitem{
+	width: 50%;
+	margin:0 auto;
+padding-bottom: 20px;
+	border-bottom: dashed 1px #f2f2f2;
+}
+
+
+#footer{
+	
+	padding:50px 0;
+	background: linear-gradient(to right,  #24243e, #302b63,#24243e);
+	font-weight: bold;
+	padding: 10%;
+
+}
+.listcl{
+	color: #f2f2f2;
+	font-weight: normal;
+}
+.ftimg{
+padding:5px !important;
+}
+.ct6{
+	text-align: center;
+	font-weight: normal;
+	font-size: 18px;
+	color: white;
+	height: 50px;
+	line-height: 50px;
+	background: black;
+
+}
+
+#footer i{
+	padding:10px;
+}
+.logo{
+	color: white !important;
+	font-weight: bold;
+}
+.navbar{
+	
+	background: linear-gradient(to right,  #3494E6, #EC6EAD);
+}
+
+section{
+	padding:50px 0;
+	background:#f2f2f2;
+}
+.blog1{
+	padding: 0;
+}
+.blog1 h1,p{
+
+	width: 100%;
+
+}
+.note1{
+	background: white;
+	padding:20px;
+	font-style: italic;
+	margin:20px 0;
+}
+.blog3{
+	font-size: 16px;
+}
+.card{
+	background: none;
+	border: none;
+}
+.card-body{
+	background: none;
+	border: none;
+}
+.card-header{
+	background: none;
+	border: none;
+}
+.comment{
+	border: 1 solid black;
+}
+#mess{
+  margin-bottom: 50px;
+}
+#mess input{
+	margin:20px 0;
+
+}
+
+.blog4 .btn-success{
+	border: none;
+
+	background: #1ab2ff;
+}
+.blog4{
+	text-align: center;
+	padding: 20px 0;
+	border: 1px solid #cccccc;
+}
+
+.blog4 i{
+	padding-right: 10px;
+}
+.ds .list-group-item{
+	border-bottom: 0.5px dashed #cccccc;
+}
+.tag p{
+	background: white;
+	margin: 5px;
+	font-size: 14px;
+}
+
+@media(max-width: 414px) {
+	#home div{
+		margin-top: 30%;
+	}
+	#home{
+		height: 300px;
+	}
+}
